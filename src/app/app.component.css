@@ -1,0 +1,32 @@
+
+.mat-con{ 
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn-center{
+    margin: 0 auto;
+    display: flex;
+ }
+
+ .mat-co{ 
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.example-card .example-spacer{
+    flex: 1 1 auto;
+    padding: 120px;
+}
+
+  .example-card {
+    width: 400px;
+    margin-bottom: 8px;
+  }
+  img{
+    border-radius: 50%;
+  }
