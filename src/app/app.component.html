@@ -12,16 +12,45 @@
     </mat-card>
 </div>
 
-<div class="mat-co" *ngIf="enableDiv">
-    <mat-card class="maty example-card">
-        <mat-card-title>{{data.location.name}}</mat-card-title>
-        
-        <mat-card-content>{{data.current.temperature}}&deg;C
-            <span class="example-spacer"></span>
-            <img mat-card-sm-image src="{{data.current.weather_icons[0]}}">
-        </mat-card-content>
-       
+<div class="row">
+    <div class="col">
 
-    </mat-card>
+    </div>
+    <div class=" col mat-co" *ngIf="enableDiv">
+        <mat-card class="maty example-card ">
+            <mat-card-title> <mat-icon>location_on</mat-icon>{{data.location.name}}</mat-card-title>
+            
+            <mat-card-content><img mat-card-sm-image src="{{imagesource}}">{{data.current.temperature}}&deg;C
+            <br><br>
 
+            <span id="time">{{data.current.weather_descriptions[0]}} <br><hr>last updated : {{data.current.observation_time}}</span>
+                
+            </mat-card-content>
+           
+    
+        </mat-card>
+    
+    </div>
+    
+    <div class=" col mat-co3" *ngIf="enableDiv">
+        <mat-card class="card3">
+            
+            <mat-card-content>
+                <span>Information</span><hr>
+                <span class="heading">uv index : </span> <span class="value">{{data.current.uv_index}}</span><br>
+                <span class="heading">feels like : </span> <span class="value">{{data.current.feelslike}}</span><br>
+                <span class="heading">humidity : </span> <span class="value">{{data.current.humidity}}</span><br>
+                <span class="heading">visibility : </span> <span class="value">{{data.current.visibility}}</span><br>
+                <span class="heading">wind direction : </span> <span class="value">{{data.current.wind_dir}}</span><br>
+                
+
+            </mat-card-content>
+           
+    
+        </mat-card>
+
+    </div>
 </div>
+
+
+

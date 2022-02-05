@@ -18,15 +18,60 @@
     justify-content: center;
     align-items: center;
   }
-.example-card .example-spacer{
-    flex: 1 1 auto;
-    padding: 120px;
-}
 
   .example-card {
     width: 400px;
     margin-bottom: 8px;
+    background: rgba(0, 0, 0, 0.185);
+    color: rgb(255, 255, 255);
+    
   }
+
   img{
     border-radius: 50%;
+  }
+
+  mat-card-title{
+    text-align: center;
+  }
+
+  #img{
+    height: 1px;
+    width: 1px;
+  }
+
+
+  mat-card-content{
+    text-align: center;
+    font-size: xx-large;
+
+  }
+
+  #time{
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .mat-co3{
+    height: 1vh;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+  }
+
+  .card3{
+    height: 300px;
+    width: 200px;
+    margin-bottom: 8px;
+    background: rgba(0, 0, 0, 0.185);
+    color: rgb(255, 255, 255);
+  }
+
+  .heading{
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .value{
+    font-size:small;
   }
